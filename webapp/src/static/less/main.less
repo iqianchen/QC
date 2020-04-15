@@ -1,0 +1,117 @@
+@import './color.less';
+
+/*-------
+    卡片
+---------*/
+.card {
+  display: block;
+  overflow: hidden;
+  .card-item {
+    display: block;
+    overflow: hidden;
+    background-color: @white;
+    margin: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    .image {
+      img {
+        width: 100%;
+      }
+    }
+    .message {
+      margin-top: 5px;
+      padding-left: 15px;
+      color: @help;
+    }
+    .text-content {
+      padding: 10px 15px;
+      line-height: 1.5em;
+    }
+  }
+}
+
+/*-------
+    列表
+---------*/
+.list {
+  margin: 10px 15px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: @white;
+  .list-title {
+    padding: 8px;
+    padding-bottom: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: @title;
+    .subTitle {
+      font-size: 12px;
+      margin-top: 6px;
+      color: @help;
+    }
+  }
+  .list-content {
+    padding: 10px 8px;
+    font-size: 14px;
+    line-height: 1.3em;
+    color: @content;
+    .list-item {
+      display: flex;
+      .label {
+        width: 60px;
+        display: inline-block;
+        text-align: justify;
+        text-align-last: justify;
+      }      
+      >span:last-child {
+        flex: 1;
+        // text-indent: -70px;
+        // margin-left: 70px;
+      }
+    }
+  }
+  .list-footer {
+    position: relative;
+    overflow: hidden;
+    padding: 8px;
+    &:before {
+      content: "";
+      display: block;
+      height: 1px;
+      background-color: @border;
+      position: absolute;
+      left: 8px;
+      right: 0px;
+      top: 0;
+    }
+  }
+}
+
+/*-------
+    字体
+---------*/
+.indent {
+  text-indent: 1.5em;
+}
+.font-default {
+  font-size: 16px;
+}
+.font-samll {
+  font-size: 14px;
+}
+.font-mini {
+  font-size: 12px;
+}
+.iconfont {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.font-right {
+  text-align: right;
+}
+
+.tag {
+  color: @red;
+}

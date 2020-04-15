@@ -1,0 +1,99 @@
+@import './color.less';
+
+//---------- 初始化样式 start ----------------
+html,body {
+  height: 100%;
+}
+li {
+  list-style: none;
+}
+input {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+// --------- 初始化样式 end ------------------
+
+//  --------- 公共样式 start ----------------
+.tips {
+  color: @subTextColor;
+  font-size: 14px;
+}
+.date-group {
+  display: flex;
+  align-items: center;
+  .date-picker {
+    width: 130px;
+  }
+  .line {
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background-color: #e4e4e4;
+    margin: 0 7px;
+  }
+}
+.row {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  .label {
+    flex-basis: 70px;
+    &.require::after {
+      content: '*';
+      color: @red;
+      font-size: 16px;
+      margin-left: 2px;
+      padding-left: 3px;
+      box-sizing: border-box;
+    }
+  }
+  .text {
+    flex: 1
+  }
+  .full {
+    flex: 1;
+    display: flex;
+  }
+  .error-message {
+    flex-basis: 200px;
+    padding-left: 7px;
+    box-sizing: border-box;
+    visibility: hidden;
+  }
+
+  &.error {
+    input {
+      border: 1px solid @red;
+    }
+    .error-message {
+      visibility: visible;
+      color: @red;
+    }
+  }
+}
+.group {
+  margin: 10px 0;
+  .group-title {
+    font-size: 16px;
+    line-height: 35px;
+    height: 35px;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: @subColor;
+    }
+  }
+  .group-box {
+    padding: 4px 2px;
+    >label {
+      margin-right: 18px;
+      margin-top: 8px;
+    }
+  }
+}
+
+// ---------- 公共样式 end -------------

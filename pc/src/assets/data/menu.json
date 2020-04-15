@@ -1,0 +1,71 @@
+[{
+  "id": 1,
+  "parentId": 0,
+  "name": "barcode",
+  "alias": "条码档案",
+  "icon": "ios-calendar",
+  "components": "test/test1"
+}, {
+  "id": 2,
+  "parentId": 0,
+  "name": "setting",
+  "alias": "设置",
+  "icon": "md-settings",
+  "components": ""
+},{
+  "id": 3,
+  "parentId": 2,
+  "name": "deparment",
+  "alias": "供应商/部门",
+  "icon": "ios-filing",
+  "components": "setting/deparment"
+},{
+  "id": 4,
+  "parentId": 2,
+  "name": "project",
+  "alias": "检验项目",
+  "icon": "md-cube",
+  "components": "setting/project"
+},{
+  "id": 5,
+  "parentId": 2,
+  "name": "notice",
+  "alias": "部门通知",
+  "icon": "ios-text",
+  "components": "setting/notice"
+}, {
+  "id": 6,
+  "parentId": 2,
+  "name": "user",
+  "alias": "用户",
+  "icon": "md-person",
+  "components": "setting/user"
+}, {
+  "id": 7,
+  "parentId": 0,
+  "name": "report",
+  "alias": "报表",
+  "icon": "md-stats",
+  "components": ""
+},{
+  "id": 8,
+  "parentId": 7,
+  "name": "sno",
+  "alias": "排名表",
+  "icon": "md-stats",
+  "components": ""
+}, {
+  "id": 9,
+  "parentId": 7,
+  "name": "result",
+  "alias": "检验结果表",
+  "icon": "md-stats",
+  "components": ""
+},{
+  "id": 8,
+  "parentId": 0,
+  "name": "appeal",
+  "alias": "检验单审核",
+  "icon": "ios-ribbon",
+  "components": ""
+}]

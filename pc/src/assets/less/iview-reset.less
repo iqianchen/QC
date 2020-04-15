@@ -1,0 +1,47 @@
+@import './color.less';
+
+// 重置iview的样式
+#outside-content {
+  background-color: @bgColor;
+  .ivu-tabs {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .ivu-tabs-bar {
+    }
+    .ivu-tabs-content {
+      flex: 1;
+      // background-color: @bgColor;
+      box-sizing: border-box;
+      padding: 0 10px 10px;
+      overflow-y: auto;
+      .ivu-tabs-tabpane {
+        height: 100%;
+        >div {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+#tableModel {
+  .ivu-icon {
+    margin-top: -2px;
+  }
+  .ivu-card-head {
+    padding: 10px 16px;
+  }
+  .ivu-btn:focus {
+    box-shadow: none;
+  }
+  .ivu-btn:hover {
+    border-color: none;
+    box-shadow: 0 0 0 1px rgba(45,140,240,.2)
+  }
+}
+
+.ivu-radio-wrapper {
+  margin-right: 15px;
+}
